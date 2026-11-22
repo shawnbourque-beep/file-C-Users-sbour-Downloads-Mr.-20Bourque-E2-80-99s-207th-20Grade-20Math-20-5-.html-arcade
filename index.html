@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational teaching platform - Math and learning resources">
+    <title>Math Arcade - Learn & Play</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">📚 Math Arcade</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Math Arcade</h1>
+            <p>Learn mathematics through interactive games and lessons</p>
+            <button class="cta-btn" onclick="document.getElementById('lessons').scrollIntoView({behavior: 'smooth'})">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <h2>Lessons</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🔢</div>
+                    <h3>Basic Arithmetic</h3>
+                    <p>Master addition, subtraction, multiplication, and division</p>
+                    <button class="btn-secondary" onclick="alert('Lesson coming soon!')">Start Lesson</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📐</div>
+                    <h3>Geometry</h3>
+                    <p>Learn shapes, angles, and spatial reasoning</p>
+                    <button class="btn-secondary" onclick="alert('Lesson coming soon!')">Start Lesson</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Algebra</h3>
+                    <p>Solve equations and understand variables</p>
+                    <button class="btn-secondary" onclick="alert('Lesson coming soon!')">Start Lesson</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games">
+        <div class="container">
+            <h2>Interactive Games</h2>
+            <div class="grid">
+                <div class="game-card">
+                    <h3>Quick Math</h3>
+                    <p>Solve as many problems as you can in 60 seconds!</p>
+                    <button class="btn-primary" onclick="startQuickMath()">Play Game</button>
+                </div>
+                <div class="game-card">
+                    <h3>Number Puzzle</h3>
+                    <p>Arrange numbers to solve the puzzle</p>
+                    <button class="btn-primary" onclick="alert('Game coming soon!')">Play Game</button>
+                </div>
+                <div class="game-card">
+                    <h3>Math Challenge</h3>
+                    <p>Test your skills with progressive difficulty</p>
+                    <button class="btn-primary" onclick="alert('Game coming soon!')">Play Game</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About This Platform</h2>
+            <p>Math Arcade is designed to make learning mathematics fun and engaging through interactive lessons and games. Whether you're a student looking to improve your skills or an educator seeking teaching resources, this platform provides an accessible way to explore mathematical concepts.</p>
+            <div class="features">
+                <div class="feature">
+                    <span>✨</span>
+                    <h4>Interactive Learning</h4>
+                </div>
+                <div class="feature">
+                    <span>🎮</span>
+                    <h4>Engaging Games</h4>
+                </div>
+                <div class="feature">
+                    <span>📈</span>
+                    <h4>Progress Tracking</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Math Arcade. All rights reserved.</p>
+            <p>Built with ❤️ for education</p>
+        </div>
+    </footer>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <h2>Quick Math Game</h2>
+            <div id="gameArea"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
